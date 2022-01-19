@@ -1,0 +1,532 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap');
+/* reste and common code start here  */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    /* scroll-behavior: smooth;font-family: 'Italianno', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem .1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+
+}
+.text__justify{
+   text-align: justify;
+}
+.section__heading{
+    font-size: 8rem;
+    text-align: center;
+    scroll-behavior: smooth;font-family: 'Italianno', cursive;
+
+
+}
+.text_white{
+    color: #FFF;
+}
+.section__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+.btn{
+    border: none;
+    background-color: rgb(9, 117, 81);
+    break-before: 0.6rem;
+    box-shadow: 01rem 0.1rem 0.1rem #222;
+    padding: 2rem 1rem;
+    cursor: pointer;
+    font-size: 1.6rem  ;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0;
+}
+
+/* reste and common code endhere  */
+
+
+/* ************* header section start here***********  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000 ;
+    color: #fff;
+    padding: 2rem 1rem;
+
+    min-height: 5vh;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.logo__figure{
+   border: 1px solid #fff; 
+}
+.logo{
+    font-size: 4rem;
+}
+#manu__icon{
+    display: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: background-color 0.3s;
+    /* background-color: aquamarine; */
+   
+
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+    background-color: #1913d5;
+    border-radius: 5px;
+}
+nav li a{
+    display: block;
+    color: #fff;
+   
+    font-size: 1.6rem;
+}
+/* ************* header section end here***********  */
+
+
+
+/* ########### main section start here ########  */
+
+/* ************* banner section start here***********  */
+#banner__banner__section{
+padding: 5rem 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 95vh;
+
+}
+#banner__banner__section article{
+flex-basis: 50%;
+margin: 1rem;
+
+
+}
+#banner__banner__section aside{
+    flex-basis: 50%;
+    text-align: center;
+    border: 1px solid #1913d5;
+    
+}
+#banner__banner__section article .banner__heading{
+    display: inline-block;
+    font-size: 3rem;
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+   align-items: center;
+    
+  
+}
+.banner__description{
+    font-size: 1.6rem;
+}
+.banner__img{
+    width: 55rem;
+    height: 55rem;
+
+}
+/* ************* banner section end here***********  */
+/* ************* banner section start here***********  */
+#blog_about{
+    min-height: 95vh;
+    padding: 5rem 1rem ;
+    background-color: #c4c4c4;
+ 
+
+}
+
+.card_container{
+    display: flex;
+   align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding:3rem 1rem ;
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    transition:transform  0.3s ease ;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card_header{
+     font-size: 3rem;
+     text-align: center;
+     margin-bottom: 2rem;
+     text-transform: uppercase;
+     color: #222;
+}
+.card_description{
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+.card_button{
+    align-self: center;
+    width: 80%;
+}
+
+/* ************* banner section end here***********  */
+
+
+
+/* *************Archives section start here***********  */
+#archives__section{
+    padding: 5rem 1rem;
+    min-height: auto;
+  
+}
+
+.archives__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;}
+.archives__container_lists{
+    display: flex;
+  
+
+    
+}
+.archives__container_lists{
+    margin: 1.3rem;
+
+}
+.archive__imge{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.3s;
+}
+.archive__imge:hover{
+    transform: scale(1.1);
+}
+/* ************* Archives section end here***********  */
+
+
+/* ************* blog post section start here***********  */
+
+#blog__post_section{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+}
+.blog__post{
+    width: 70%;
+    display: flex;
+    margin: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222,
+    -0.1rem 0rem 0.1rem #222;
+    transition:transform 0.4s;
+
+}
+.blog__post:hover{
+    transform: scale(1.1);
+}
+.blog_post_aside{
+
+    flex: 1;
+}
+.blog__headin{
+    margin-bottom: 5rem;
+}
+.blog__img{
+    width: 100%;
+    height: 100%;
+}
+.blog_conten{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+.blog__heading{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: rgb(5, 36, 134);
+}
+.blog__sub__heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+.blog_description{
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+.blog__button{
+    background-color: #2a2868;
+    width: 40%;
+
+}
+
+/* *************blog post section end here***********  */
+
+/* *************contac section start  here***********  */
+
+#contac__section{
+    padding: 5rem 1rem ;
+    min-height: 90vh;
+    background-color: #c4c4c4;
+}
+
+.contac__form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222,
+    -0.1rem 0rem 0.1rem #222;
+    transition:transform 0.4s;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.form__control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+     
+}
+.form__control label{
+    font-size: 1.5rem;
+    flex: 0.3;
+}
+.form__control input,
+.form__control textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 1.6rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+.form__control textarea{
+    resize: none;
+    height: 12vh;
+}
+.from__button__end{
+    display: flex;
+ justify-content: end;
+}
+
+.contac__button{
+ width: 30%;
+ background-color: #3530df;
+ color: #fff;
+ letter-spacing: 0.6rem;
+ text-transform: uppercase;
+}
+
+
+/* *************contac section end here***********  */
+
+
+/* *************footer section end here***********  */
+footer{
+   background-color: #000; 
+   color: #fff;
+   min-height: 5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 1rem;
+}
+.copyright__text{
+    font-size: 1.5rem; 
+}
+.footer__icon{
+font-size: 2rem;
+
+
+}
+/* *************footer section end here***********  */
+
+
+
+/* ########### main section end here ########  */
+
+
+/* ************* responsive start here ***********  */
+@media(max-width:992px){
+    #banner__banner__section{
+        flex-direction: column;
+    }
+    #banner__banner__section  article{
+      
+            width: 56%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5rem;
+    }
+    .card_container{
+        flex-direction: column;
+        width: 50%;
+        flex-wrap: wrap;
+        
+       
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 55.5%;
+    }
+    #banner__banner__section  article{
+        width: 80%;
+    }
+    .card_container{
+        width: 80%;
+    }
+    #archives__section{
+        min-height: auto;
+    }
+    .blog__post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+    #contac__section{
+        min-height: auto;
+    }
+    .contac__form{
+        width: 90%;
+    }
+    .form__control{
+        flex-direction: column;
+        
+    }
+    .form__contro label{
+  margin-bottom: 1rem;
+    }
+
+}
+@media(max-width:600px){
+    html{
+        font-size: 48.5%; 
+    }
+    header{
+        flex-direction: column;
+    }
+    #manu__icon{
+        display: block;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    nav ul{
+        padding: 2rem;
+        
+    }
+    nav li{
+        display: block;
+        margin: 2rem 0;
+        margin-right: 0;
+   
+    }
+    nav li a{
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    #banner__banner__section  {
+        min-height: auto;
+       
+    }
+    #banner__banner__section  article{
+       
+        width: 90%;
+    }
+    .card_container{
+        width: 90%;
+    }
+    .banner__img{
+        max-width: 100%;
+    }
+    .archives__container_lists{
+        flex-wrap: wrap;
+    }
+    .blog__post{
+     
+        width: 80%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #manubar2{
+        display: flex;
+    }
+    .form__control input,
+.form__control textarea{
+    max-width: 100%;
+}
+
+
+
+}
+@media(max-width:400px){
+    .card_container{
+        width: 90%;
+    }
+    .card{
+        width: 80%;
+        max-width: 100%;
+    }
+    .card_header{
+        font-size: 2rem;
+        
+    }
+    .section__heading{
+        width: 50%;
+        max-width: 100%;
+        font-size: 2.4rem;
+        color: #2a2868;
+    }
+  
+
+}
+
+/* ************* responsive end here ***********  */
+
